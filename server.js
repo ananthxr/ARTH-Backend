@@ -237,6 +237,7 @@ app.post('/upload-web-config', async (req, res) => {
 
     // Use the complete config from the request (frontend manages the full state)
     const newConfig = {
+      storyline: req.body.storyline || existingConfig.storyline || {},
       images: req.body.images || [],
       lastUpdated: req.body.lastUpdated || new Date().toISOString(),
       totalTreasures: req.body.totalTreasures || (req.body.images ? req.body.images.length : 0)
