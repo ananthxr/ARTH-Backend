@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(tree:*)",
+      "Bash(git -C /z/treasure-images-server log --oneline -20)",
+      "Bash(git -C /z/treasure-images-server show --stat HEAD)",
+      "Bash(find:*)",
+      "Bash(git -C /z/treasure-images-server show 987d303:server.js)",
+      "Bash(git -C /z/treasure-images-server log --all --graph --oneline)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
